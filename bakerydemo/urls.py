@@ -1,4 +1,7 @@
 from django.conf.urls import include, url
+
+from django.urls import path
+
 from django.conf import settings
 from django.contrib import admin
 
@@ -17,6 +20,8 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
 
     url(r'^search/$', search_views.search, name='search'),
+
+    path(r'comments/', include('django_comments_xtd.urls')),
 
     url(r'^sitemap\.xml$', sitemap),
     url(r'^api/v2/', api_router.urls),

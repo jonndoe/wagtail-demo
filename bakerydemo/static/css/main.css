@@ -14,6 +14,12 @@
 /* 9. Miscellaneous/ Helper styles ------------------------------------------ */
 
 /* Global styles */
+
+div.media img {
+  width: 48px;
+  height: 48px;
+}
+
 body {
   padding-top: 0;
   padding-bottom: 0;
